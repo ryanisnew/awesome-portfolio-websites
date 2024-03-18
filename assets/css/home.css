@@ -40,6 +40,10 @@ html[data-theme="dark"] {
   --col-white: #fff;
 }
 /* Particle effect*/
+.head_icon{
+  object-fit: cover;
+}
+
 body{
   font-family: "Poppins";
 }
@@ -71,6 +75,9 @@ body{
 .animated-text span {
   display: none;
   line-height: 1;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
 .animated-text span.active {
@@ -83,7 +90,7 @@ body{
   width: 6px;
   text-indent: 0;
   background: var(--col-icon);
-  animation: blink 0.3s infinite alternate;
+  animation: blink 500s infinite alternate;
 }
 .datawords{
   white-space: nowrap;
@@ -281,8 +288,7 @@ html[light-mode="dark"] .socialicon{
 ---------------------------
 */
 .twitter-icon{
-  width: 40px;
-  margin-left: 12px;
+  /* margin-right: 40px; */
 }
 
 .twitter:hover #wing1{
@@ -300,6 +306,19 @@ html[light-mode="dark"] .socialicon{
       transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
      }
    }
+
+#x_icon{
+  margin: -13px 0 0 -28px;
+  width: 120px;
+  height: 90px;
+}
+
+/* reddit */
+#reddit_icon{
+  width: auto;
+  height: 67px;
+  margin: -1.3px 0 0 -1px;
+}
 
 /*
 --------------------------
@@ -336,7 +355,7 @@ html[light-mode="dark"] .github-icon{
   .dribbble-icon{
     width: 30px;
     height: 30px;
-    margin-left:16px;
+    /* margin-left:16px; */
     margin-top: 20px;
   }
   
@@ -366,8 +385,9 @@ html[light-mode="dark"] .github-icon{
   */
   
   .codeforces-icon{
-    margin-right: 6px;
+    /* margin-right: 6px; */
     margin-top: 6px;
+    margin-left: -10px;
   }
   
   .codeforces-icon .red {
